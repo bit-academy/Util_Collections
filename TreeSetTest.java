@@ -18,13 +18,13 @@ public class TreeSetTest implements Comparator
         treeSet.add(new Integer(2));
         treeSet.add(new Integer(1));
 
-        System.out.print("Á¤·Ä°á°ú : ");
+        System.out.print("ì •ë ¬ê²°ê³¼ : ");
         System.out.println(treeSet);
     }
 
     public int compare(Object o1, Object o2)
     {
-        System.out.print("ºñ±³ : "+o1+", "+o2);
+        System.out.print("ë¹„êµ : "+o1+", "+o2);
         int res=((Integer)o1).compareTo(o2);
         System.out.println(" --> "+res);
         return res;
