@@ -1,22 +1,18 @@
 import java.io.*;
 import java.util.*;
 
-public class HashMapTest
-{
-    public static void main(String[] args) throws Exception
-    {
-        Map map=new HashMap();
-        map.put("¸¸È­", "¸ó½ºÅÍ ÁÖ½ÄÈ¸»ç");
-        map.put("½ÃÆ®ÄŞ", "Friends");
+public class HashMapTest {
+    public static void main(String[] args) throws Exception {
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("ë§Œí™”", "ëª¬ìŠ¤í„° ì£¼ì‹íšŒì‚¬");
+        map.put("ì‹œíŠ¸ì½¤", "Friends");
 
-        System.out.println("³¹¸»À» ÀÔ·ÂÇÏ¼¼¿ä. ¿¹) ¿µÈ­,½¬¸®");
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        for (String str; (str=br.readLine())!=null; )
-        {
-            StringTokenizer st=new StringTokenizer(str, ",");
-            if (st.countTokens()<2)
-            {
-                System.out.println("ÄŞ¸¶·Î ±¸ºĞµÈ ³¹¸»À» ÀÔ·ÂÇÏ¼¼¿ä.");
+        System.out.println("ë‚±ë§ì„ ì…ë ¥í•˜ì„¸ìš”. ì˜ˆ) ì˜í™”,ì‰¬ë¦¬");
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        for (String str; (str = br.readLine()) != null;) {
+            StringTokenizer st = new StringTokenizer(str, ",");
+            if (st.countTokens() < 2) {
+                System.out.println("ì½¤ë§ˆë¡œ êµ¬ë¶„ëœ ë‚±ë§ì„ ì…ë ¥í•˜ì„¸ìš”.");
                 continue;
             }
             map.put(st.nextToken().trim(), st.nextToken().trim());

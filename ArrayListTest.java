@@ -1,19 +1,19 @@
 import java.util.*;
 
 public class ArrayListTest {
-	public static void main(String[] args) {
-		List list1 = new ArrayList();
-		list1.add("°ø°¢±âµ¿´ë");
-		list1.add("¿ø·É°øÁÖ");
+    public static void main(String[] args) {
+        List<String> list1 = new ArrayList<String>();
+        list1.add("ê³µê°ê¸°ë™ëŒ€");
+        list1.add("ì›ë ¹ê³µì£¼");
 
-		List list2 = new ArrayList(list1);
-		list2.add("¶óÇ»Å¸");
+        List<String> list2 = new ArrayList<String>(list1);
+        list2.add("ë¼í“¨íƒ€");
 
-		List list3 = new ArrayList();
-		list3.addAll(list2);
-		int ¶óÇ»Å¸ÀÎµ¦½º = list3.indexOf("¶óÇ»Å¸");
-		list3.add(¶óÇ»Å¸ÀÎµ¦½º, "ÄÚ³­");
+        List<String> list3 = new ArrayList<String>();
+        list3.addAll(list2);
+        int ë¼í“¨íƒ€ì¸ë±ìŠ¤ = list3.indexOf("ë¼í“¨íƒ€");
+        list3.add(ë¼í“¨íƒ€ì¸ë±ìŠ¤, "ì½”ë‚œ");
 
-		System.out.println(list3);
-	}
+        System.out.println(list3);
+    }
 }

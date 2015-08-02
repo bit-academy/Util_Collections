@@ -1,28 +1,25 @@
 import java.util.*;
 
-public class HashSetTest
-{
-    public static void main(String[] args)
-    {
-        if (args.length<1)
-        {
-            System.out.println("»ç¿ë¹ı : java HashSetTest Ãß°¡µ¥ÀÌÅÍ");
+public class HashSetTest {
+    public static void main(String[] args) {
+        if (args.length < 1) {
+            System.out.println("ì‚¬ìš©ë²• : java HashSetTest ì¶”ê°€ë°ì´í„°");
             System.exit(1);
         }
 
-        Set °³ÁıÇÕ=new HashSet();
+        Set<String> ê°œì§‘í•© = new HashSet<String>();
 
-        °³ÁıÇÕ.add("Áøµ¾°³");
-        °³ÁıÇÕ.add("»ğ»ìÀÌ");
-        °³ÁıÇÕ.add("Ç³»ê°³");
+        ê°œì§‘í•©.add("ì§„ë—ê°œ");
+        ê°œì§‘í•©.add("ì‚½ì‚´ì´");
+        ê°œì§‘í•©.add("í’ì‚°ê°œ");
 
-        System.out.print("±âÁ¸ µ¥ÀÌÅÍ Set : ");
-        System.out.print(°³ÁıÇÕ);
+        System.out.print("ê¸°ì¡´ ë°ì´í„° Set : ");
+        System.out.print(ê°œì§‘í•©);
 
-        boolean °á°ú=°³ÁıÇÕ.add(args[0]);
+        boolean ê²°ê³¼ = ê°œì§‘í•©.add(args[0]);
 
-        System.out.println("\n ### À§ ÁıÇÕ¿¡ "+args[0]+"À»(¸¦) Ãß°¡ÇÑ °á°ú : "+°á°ú);
-        System.out.print("Ãß°¡ÈÄ µ¥ÀÌÅÍ Set : ");
-        System.out.print(°³ÁıÇÕ);
+        System.out.println("\n ### ìœ„ ì§‘í•©ì— " + args[0] + "ì„(ë¥¼) ì¶”ê°€í•œ ê²°ê³¼ : " + ê²°ê³¼);
+        System.out.print("ì¶”ê°€í›„ ë°ì´í„° Set : ");
+        System.out.print(ê°œì§‘í•©);
     }
 }
